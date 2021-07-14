@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Copyright 2004-2017 www.meiweix.cn 广东美食网 - 广东美食网户网站">
+    <meta name="keywords" content="广东,姑苏美食,广东美食网,广东餐饮,金牌食客卡,电子优惠券,外卖,商家黄页,大众点评,博客,休闲娱乐,姑苏生活论坛,特色土特产,生活时尚,http://www.meiweix.cn">
+    <meta name="description" content="广东美食网、广东美食网是广东的美食门户网站，拥有最新鲜、最丰富的美食资讯。其中金牌食客卡是联合广东众多优秀商家推出的一种优惠卡，优惠打折涉及餐饮、休闲、购物等广东时尚生活的各个方面；电子优惠券是为网友提供的另一种优惠措施，涉及生活的诸多方面；同时拥有外卖、商家点评、博客等王牌栏目。网站下属的姑苏生活论坛，无论是美食、购物、交友、家庭，还是车友会、理财、旅游，它都已成为广东人生活中不可或缺的一部分。">
+    <title>最新动态 - 广东美食网 广东美食网 - 广东美食网户网站</title>
+    <link rel="stylesheet" href="style/style-2.0.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-center">
+                <a href="index.html" class="center-logo fl"><img src="images/logo1.png" alt="广东美食网"></a>
+        <span class="center-site fl">
+            <span>www.meiweix.cn</span>
+            <span>广东专业美食门户</span>
+        </span>
+                
+                    <span class="fr"><a href="javascript:;">注册</a></span>
+            <span class="fr"><a href="javascript:;">登录</a></span>
+                </div>
+</div>
+<div class="main">
+    <div class="main-nav">
+        <div class="fl">
+            <a href="index.html" class="nav-link">首页</a>
+            <span class="nav-pot">·</span>
+            <a href="latest.html" class="nav-link">找优惠</a>
+            <span class="nav-pot">·</span>
+            <a href="bawangcan.html" class="nav-link">霸王餐</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">金牌食客卡</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">论坛</a>
+            <span class="nav-pot">·</span>
+            <a href="business.html" class="nav-link">推荐品牌</a>
+        </div>
+        <div class="fr search">
+            <input id="searchtext" type="text" placeholder="搜索最新资讯">
+            <span id="searchbtn" class="fr"></span>
+            <script>
+                (function () {
+                    var searchtext = document.getElementById('searchtext');
+                    var searchbtn = document.getElementById('searchbtn');
+
+                    if (window.addEventListener) {
+                        searchtext.addEventListener('keydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        }, false);
+                        searchbtn.addEventListener('click', search, false);
+                    } else if (window.attachEvent) {
+                        searchtext.attachEvent('onkeydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        });
+                        searchbtn.attachEvent('onclick', search);
+                    } else {
+                        searchtext.onkeydown = function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        };
+                        searchbtn.onclick = search;
+                    }
+
+                    function search() {
+                        var text = searchtext.value.replace(/(^\s+)|(\s+$)/,'');
+                        if(!text){
+                            alert('请填写要搜索的关键字。');
+                            return false;
+                        }
+                        window.location.href = './latest.php?searchtext=' + text;
+                    }
+                })();
+            </script>
+        </div>
+    </div><div class="main-latest">
+    <div class="latest-header">
+        <span>最新动态</span>
+    </div>
+    <div class="latest-search">
+        <form action="">
+            <!--<select name="" id="" class="search-select fl">
+                <option value="">全部</option>
+            </select>-->
+            <span class="fl" style="width:1px;height:27px;background-color:#c8c8c8;margin-top:6px;margin-left:-1px;"></span>
+            <input type="text" placeholder="请输入关键字" id="searchtext" name="searchtext" class="search-input fl" value="">
+            <input type="submit" value="搜索" class="search-btn fl">
+            <input name="target" type="hidden" value="0">
+        </form>
+    </div>
+    <ul class="latest-collect">
+        <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190925/4452706_2f9b8cb2aa3c665b1e3cOl51.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">大闸蟹组团来袭 | 盐焗蟹、醉蟹、清蒸大闸蟹，根本吃不完！</p>
+                    <p class="collect-content">今年的大闸蟹吃过了吗？还没有就out啦！</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190910/4452706_47a231ad48055d9c199a1z61.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">幸会斑“澜”，“蔚”您而来 | 2019广东万豪酒店主题婚礼秀圆满落幕</p>
+                    <p class="collect-content">初遇你的那一刻，
+
+在你的眸中看到了星辰大海
+
+看到了广袤原野上的辽阔与芬芳</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190830/1585908_5e7c80b20409bdb04eb70w0i.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">荷花下午茶｜清香徐来，抚平现实中的烦躁</p>
+                    <p class="collect-content">广东太湖假日酒店新推荷花下午茶，搭配时令果盘一份以及两杯莲子心茶，美哉！</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190819/1073635_1a7606a233b60812dbbey6fT.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东日航酒店弁庆日餐厅套餐上线！</p>
+                    <p class="collect-content">弁庆日餐厅此次推出了200元优选套餐，三款不同风味满足日料爱好者，小编就等此刻了，超实惠套餐和修身养性的用餐环境，快一起来吧！</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190814/4452706_984cc29a29fd6176d982U8ma.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">激情德国啤酒节重磅来袭！</p>
+                    <p class="collect-content">酒香凛冽的鲜啤、流光溢彩的夜色、委婉动听的旋律…… 9月18日至21日，广东欧洲商会将在金鸡湖凯宾斯基大酒店湖畔花园为您奉上2019激情德国啤酒节。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190805/4452706_42ec5c800bfb3174f60aRDD4.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">遇见 &#8226; 闽味 the Taste of Fujian</p>
+                    <p class="collect-content">福建省位于我国东南部
+面临大海，背靠群山
+鱼虾螺蚌鲟蚝常年不绝
+茶叶、竹笋、河鳗等山珍野味兴盛
+荔枝、龙眼等佳果名誉海内外</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190805/4452706_dff3aba8db7986ed32b2SoiZ.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">七夕 | 云端浪漫惟妙，拥你触手可及 Honey Words</p>
+                    <p class="collect-content">七夕，是表达爱意的佳期
+广东香格拉大酒店
+3间风格迥异的餐厅
+营造出如爱情剧般的氛围
+动人情话搭配浪漫场景
+许你和TA一个难忘七夕夜晚</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190708/4452706_8015b3f507a03c850730YDuu.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东香格里拉大酒店于国际无塑料袋日推行“减塑”计划</p>
+                    <p class="collect-content">从2019年7月起，酒店将全面使用纸质吸管，木质搅拌棒，木质果签，减少塑料制品使用，维护地球健康。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190704/4452706_081c93794519c79caa32dOlR.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">未来20天，全场菜品狂打6.6折！相城这家重庆火锅店要被挤爆了！</p>
+                    <p class="collect-content">有这样一个神奇般的地方
+火遍大江南北
+让人欲罢不能
+它就是集万千吃货宠爱于一身的
+德庄火锅</p>
+                </a>
+            </li>    </ul>
+    
+    	<div class="latest-addmore">            
+		<div class="tcdPageCode"><a href="latest-0_2.html" class="prevPage">上一页</a>
+		<a href='javascript:;' class='tcdNumber'>1</a><a href='latest-0_2.html' class='tcdNumber'>2</a><span class='current'>3</span><a href='latest-0_4.html' class='tcdNumber'>4</a><a href='latest-0_5.html' class='tcdNumber'>5</a><a href='latest-0_6.html' class='tcdNumber'>6</a><a href='latest-0_7.html' class='tcdNumber'>7</a>		<a href="latest-0_4.html" class="nextPage">下一页</a></div>        
+	</div>
+	        
+</div>
+</div>
+    <div class="footer01">
+        <a href="javascript:;" target="_blank">公司简介</a><span>|</span>
+        <a href="javascript:;" target="_blank">合作伙伴</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚聘英才</a><span>|</span>
+        <a href="javascript:;" target="_blank">法律声明</a><span>|</span>
+        <a href="javascript:;" target="_blank">联系我们</a><span>|</span>
+        <a href="javascript:;" target="_blank">帮助中心</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚信保障措施</a><span>|</span>
+        <a href="javascript:;" target="_blank">友情链接</a>
+        <img src="images/footer01_qrcode.jpg" alt="" class="fr footer01-qrcode">
+    </div>
+
+<script src="ymsextweb/stats/stats.js" type="text/javascript"></script></body>
+</html>

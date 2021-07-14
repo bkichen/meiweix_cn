@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Copyright 2004-2017 www.meiweix.cn 广东美食网 - 广东美食网户网站">
+    <meta name="keywords" content="广东,姑苏美食,广东美食网,广东餐饮,金牌食客卡,电子优惠券,外卖,商家黄页,大众点评,博客,休闲娱乐,姑苏生活论坛,特色土特产,生活时尚,http://www.meiweix.cn">
+    <meta name="description" content="广东美食网、广东美食网是广东的美食门户网站，拥有最新鲜、最丰富的美食资讯。其中金牌食客卡是联合广东众多优秀商家推出的一种优惠卡，优惠打折涉及餐饮、休闲、购物等广东时尚生活的各个方面；电子优惠券是为网友提供的另一种优惠措施，涉及生活的诸多方面；同时拥有外卖、商家点评、博客等王牌栏目。网站下属的姑苏生活论坛，无论是美食、购物、交友、家庭，还是车友会、理财、旅游，它都已成为广东人生活中不可或缺的一部分。">
+    <title>霸王餐 - 广东美食网 广东美食网 - 广东美食网户网站</title>
+    <link rel="stylesheet" href="style/style-2.0.css">
+    <link rel="stylesheet" href="style/jquery.hiSlider.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.hiSlider.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-center">
+                <a href="index.html" class="center-logo fl"><img src="images/logo1.png" alt="广东美食网"></a>
+        <span class="center-site fl">
+            <span>www.meiweix.cn</span>
+            <span>广东专业美食门户</span>
+        </span>
+                
+                    <span class="fr"><a href="javascript:;">注册</a></span>
+            <span class="fr"><a href="javascript:;">登录</a></span>
+                </div>
+</div>
+<div class="main">
+    <div class="main-nav">
+        <div class="fl">
+            <a href="index.html" class="nav-link">首页</a>
+            <span class="nav-pot">·</span>
+            <a href="latest.html" class="nav-link">找优惠</a>
+            <span class="nav-pot">·</span>
+            <a href="" class="nav-link">霸王餐</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">金牌食客卡</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">论坛</a>
+            <span class="nav-pot">·</span>
+            <a href="business.html" class="nav-link">推荐品牌</a>
+        </div>
+        <div class="fr search">
+            <input id="searchtext" type="text" placeholder="搜索最新资讯">
+            <span id="searchbtn" class="fr"></span>
+            <script>
+                (function () {
+                    var searchtext = document.getElementById('searchtext');
+                    var searchbtn = document.getElementById('searchbtn');
+
+                    if (window.addEventListener) {
+                        searchtext.addEventListener('keydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        }, false);
+                        searchbtn.addEventListener('click', search, false);
+                    } else if (window.attachEvent) {
+                        searchtext.attachEvent('onkeydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        });
+                        searchbtn.attachEvent('onclick', search);
+                    } else {
+                        searchtext.onkeydown = function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        };
+                        searchbtn.onclick = search;
+                    }
+
+                    function search() {
+                        var text = searchtext.value.replace(/(^\s+)|(\s+$)/,'');
+                        if(!text){
+                            alert('请填写要搜索的关键字。');
+                            return false;
+                        }
+                        window.location.href = './latest.php?searchtext=' + text;
+                    }
+                })();
+            </script>
+        </div>
+    </div>    <div class="main-bawangcan">
+        <div class="latest-header">
+            <span>霸王餐</span>
+        </div>
+                    
+            <div class="bawangcan-shows">
+                <div class="shows-nav">
+                    <span class="year-sel">2021年</span> | <span onclick="javascript:location.search='?selyear=2020&currpage=1';">2020年</span> | <span onclick="javascript:location.search='?selyear=2019&currpage=1';">2019年</span> | <span onclick="javascript:location.search='?selyear=2018&currpage=1';">2018年</span> | <span onclick="javascript:location.search='?selyear=2017&currpage=1';">2017年</span> | <span onclick="javascript:location.search='?selyear=2016&currpage=1';">2016年</span> | <span onclick="javascript:location.search='?selyear=2015&currpage=1';">2015年</span> | <span onclick="javascript:location.search='?selyear=2014&currpage=1';">2014年</span>                </div>
+                <ul class="shows-pics">
+                                    </ul>
+        </div>
+        
+                
+    </div>
+</div>
+    <div class="footer01">
+        <a href="javascript:;" target="_blank">公司简介</a><span>|</span>
+        <a href="javascript:;" target="_blank">合作伙伴</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚聘英才</a><span>|</span>
+        <a href="javascript:;" target="_blank">法律声明</a><span>|</span>
+        <a href="javascript:;" target="_blank">联系我们</a><span>|</span>
+        <a href="javascript:;" target="_blank">帮助中心</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚信保障措施</a><span>|</span>
+        <a href="javascript:;" target="_blank">友情链接</a>
+        <img src="images/footer01_qrcode.jpg" alt="" class="fr footer01-qrcode">
+    </div>
+
+<script src="ymsextweb/stats/stats.js" type="text/javascript"></script><script>
+    /*$(function () {
+        var onajax = false;
+        $('.demo').hiSlider({
+            intervalTime: 2000,
+            isShowControls: false
+        });
+        $(".tcdPageCode").createPage({
+            pageCount: 0,
+            current: '1',
+            backFn: function (p) {
+                if(onajax){
+                    return false;
+                }
+                onajax = true;
+                $.ajax({
+                    url: '',
+                    type: "POST",
+                    dataType: "json",
+                    data: {
+                                                'ajaxsecstr': '',
+                        'selyear': '2021',
+                        'currpage': p
+                    },
+                    complete: function () {
+                        onajax = false;
+                    },
+                    error: function () {
+                        msg('出错了，请重试');
+                    },
+                    success: function (res) {
+                        $('.shows-pics').html(res.replace(/\\(.)/g, "$1"));
+                    }
+                });
+            }
+        });
+    })*/
+</script>
+<script type="text/javascript" src="code/jia.js" ></script>
+</body>
+</html>

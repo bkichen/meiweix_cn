@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Copyright 2004-2017 www.meiweix.cn 广东美食网 - 广东美食网户网站">
+    <meta name="keywords" content="广东,姑苏美食,广东美食网,广东餐饮,金牌食客卡,电子优惠券,外卖,商家黄页,大众点评,博客,休闲娱乐,姑苏生活论坛,特色土特产,生活时尚,http://www.meiweix.cn">
+    <meta name="description" content="广东美食网、广东美食网是广东的美食门户网站，拥有最新鲜、最丰富的美食资讯。其中金牌食客卡是联合广东众多优秀商家推出的一种优惠卡，优惠打折涉及餐饮、休闲、购物等广东时尚生活的各个方面；电子优惠券是为网友提供的另一种优惠措施，涉及生活的诸多方面；同时拥有外卖、商家点评、博客等王牌栏目。网站下属的姑苏生活论坛，无论是美食、购物、交友、家庭，还是车友会、理财、旅游，它都已成为广东人生活中不可或缺的一部分。">
+    <title>最新动态 - 广东美食网 广东美食网 - 广东美食网户网站</title>
+    <link rel="stylesheet" href="style/style-2.0.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-center">
+                <a href="index.html" class="center-logo fl"><img src="images/logo1.png" alt="广东美食网"></a>
+        <span class="center-site fl">
+            <span>www.meiweix.cn</span>
+            <span>广东专业美食门户</span>
+        </span>
+                
+                    <span class="fr"><a href="javascript:;">注册</a></span>
+            <span class="fr"><a href="javascript:;">登录</a></span>
+                </div>
+</div>
+<div class="main">
+    <div class="main-nav">
+        <div class="fl">
+            <a href="index.html" class="nav-link">首页</a>
+            <span class="nav-pot">·</span>
+            <a href="latest.html" class="nav-link">找优惠</a>
+            <span class="nav-pot">·</span>
+            <a href="bawangcan.html" class="nav-link">霸王餐</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">金牌食客卡</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">论坛</a>
+            <span class="nav-pot">·</span>
+            <a href="business.html" class="nav-link">推荐品牌</a>
+        </div>
+        <div class="fr search">
+            <input id="searchtext" type="text" placeholder="搜索最新资讯">
+            <span id="searchbtn" class="fr"></span>
+            <script>
+                (function () {
+                    var searchtext = document.getElementById('searchtext');
+                    var searchbtn = document.getElementById('searchbtn');
+
+                    if (window.addEventListener) {
+                        searchtext.addEventListener('keydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        }, false);
+                        searchbtn.addEventListener('click', search, false);
+                    } else if (window.attachEvent) {
+                        searchtext.attachEvent('onkeydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        });
+                        searchbtn.attachEvent('onclick', search);
+                    } else {
+                        searchtext.onkeydown = function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        };
+                        searchbtn.onclick = search;
+                    }
+
+                    function search() {
+                        var text = searchtext.value.replace(/(^\s+)|(\s+$)/,'');
+                        if(!text){
+                            alert('请填写要搜索的关键字。');
+                            return false;
+                        }
+                        window.location.href = './latest.php?searchtext=' + text;
+                    }
+                })();
+            </script>
+        </div>
+    </div><div class="main-latest">
+    <div class="latest-header">
+        <span>最新动态</span>
+    </div>
+    <div class="latest-search">
+        <form action="">
+            <!--<select name="" id="" class="search-select fl">
+                <option value="">全部</option>
+            </select>-->
+            <span class="fl" style="width:1px;height:27px;background-color:#c8c8c8;margin-top:6px;margin-left:-1px;"></span>
+            <input type="text" placeholder="请输入关键字" id="searchtext" name="searchtext" class="search-input fl" value="">
+            <input type="submit" value="搜索" class="search-btn fl">
+            <input name="target" type="hidden" value="0">
+        </form>
+    </div>
+    <ul class="latest-collect">
+        <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190118/3030250_eb7bdbbc96355a9020eb6ATT.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东洲际酒店 艺术家同款香槟蛋糕售卖开启</p>
+                    <p class="collect-content">为庆祝全球第200家洲际酒店开业,广东洲际酒店特别推出以Alexander Hall创意为原型的艺术香槟蛋糕.</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190118/3030250_c546df2769de5a1d0495qSPq.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">托尼洛兰博基尼书苑酒店 新春集市，体验不一样的年味</p>
+                    <p class="collect-content">春节期间，广东托尼洛·兰博基尼书苑酒店以全新的心意，为您献上与众不同的集市欢愉时光</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190118/3030250_3f28e6a3d457af82c0f7905y.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东安榭度假酒店 中法创意美食晚宴</p>
+                    <p class="collect-content">2019年1月13日及14日，广东李公堤安榭度假酒店，苏一餐厅90后疯狂创意主厨Chef Sun与神秘嘉宾主厨Chef Chen，联手打造了浪漫中法主题晚宴 。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190116/3030250_f8f47dbda31c041ba3fbO7KN.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东福朋喜来登酒店 下午茶全新呈现</p>
+                    <p class="collect-content">广东福朋喜来登酒店大堂吧，2019年推出两款全新产品，带你火火红红过新年</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190115/3030250_6daf0b811cf100157c9e4HJf.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东日航酒店 日航广式盆菜</p>
+                    <p class="collect-content">正值新年佳节，广东日航酒店推出日航广式盆菜。「盆菜」作为粤菜中的经典，能流传至今，也带着美好寓意。菜品所用的盆是圆的，带有团圆之意。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190114/3030250_c531b9c97ae1f00c8015S6Zx.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东香格里拉大酒店 寻味儿时记忆，重现传统年味</p>
+                    <p class="collect-content">广东香格里拉大酒店倾情呈现多款佳节赏味礼遇。精选年货礼盒，年夜饭飨宴，愉悦客房体验，陪伴宾客度过一个愉悦轻松，年味浓郁的幸福年。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190107/3030250_f31f4e76123285624e6fpV4F.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东安榭度假酒店 舌尖上的中法美食</p>
+                    <p class="collect-content">苏一餐厅90后疯狂创意主厨Chef Sun与神秘嘉宾主厨Chef Chen将联手打造浪漫中法主题晚宴。中法美食的碰撞，广东时令美食创意融入法式技法及先进的烹调理念，给您一场味蕾的饕餮之宴</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_190104/3030250_e0756c46906ee65f844cp6Aa.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东凯悦酒店 跨年倒数黑胶狂欢夜</p>
+                    <p class="collect-content">新年将至，旧时光远去，是告别，也是期许。2018年12月31日，广东凯悦酒店举办了一年一度跨年倒数派对，与家人朋友在倒数声中一同迎接新年的到来。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181227/3030250_c023bdc59ec60fc4206822Lc.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东日航酒店 日航美食轰趴 Nikko Gourmet Party</p>
+                    <p class="collect-content">即日起至2019年5月31日，广东日航酒店餐饮特惠来袭！多种套餐优惠等你哦</p>
+                </a>
+            </li>    </ul>
+    
+    	<div class="latest-addmore">            
+		<div class="tcdPageCode"><a href="latest-0_5.html" class="prevPage">上一页</a>
+		<a href='latest-0_3.html' class='tcdNumber'>3</a><a href='latest-0_4.html' class='tcdNumber'>4</a><a href='latest-0_5.html' class='tcdNumber'>5</a><span class='current'>6</span><a href='latest-0_7.html' class='tcdNumber'>7</a><a href='javascript:;' class='tcdNumber'>8</a><a href='javascript:;' class='tcdNumber'>9</a>		<a href="latest-0_7.html" class="nextPage">下一页</a></div>        
+	</div>
+	        
+</div>
+</div>
+    <div class="footer01">
+        <a href="javascript:;" target="_blank">公司简介</a><span>|</span>
+        <a href="javascript:;" target="_blank">合作伙伴</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚聘英才</a><span>|</span>
+        <a href="javascript:;" target="_blank">法律声明</a><span>|</span>
+        <a href="javascript:;" target="_blank">联系我们</a><span>|</span>
+        <a href="javascript:;" target="_blank">帮助中心</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚信保障措施</a><span>|</span>
+        <a href="javascript:;" target="_blank">友情链接</a>
+        <img src="images/footer01_qrcode.jpg" alt="" class="fr footer01-qrcode">
+    </div>
+
+<script src="ymsextweb/stats/stats.js" type="text/javascript"></script></body>
+</html>

@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Copyright 2004-2017 www.meiweix.cn 广东美食网 - 广东美食网户网站">
+    <meta name="keywords" content="广东,姑苏美食,广东美食网,广东餐饮,金牌食客卡,电子优惠券,外卖,商家黄页,大众点评,博客,休闲娱乐,姑苏生活论坛,特色土特产,生活时尚,http://www.meiweix.cn">
+    <meta name="description" content="广东美食网、广东美食网是广东的美食门户网站，拥有最新鲜、最丰富的美食资讯。其中金牌食客卡是联合广东众多优秀商家推出的一种优惠卡，优惠打折涉及餐饮、休闲、购物等广东时尚生活的各个方面；电子优惠券是为网友提供的另一种优惠措施，涉及生活的诸多方面；同时拥有外卖、商家点评、博客等王牌栏目。网站下属的姑苏生活论坛，无论是美食、购物、交友、家庭，还是车友会、理财、旅游，它都已成为广东人生活中不可或缺的一部分。">
+    <title>最新动态 - 广东美食网 广东美食网 - 广东美食网户网站</title>
+    <link rel="stylesheet" href="style/style-2.0.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-center">
+                <a href="index.html" class="center-logo fl"><img src="images/logo1.png" alt="广东美食网"></a>
+        <span class="center-site fl">
+            <span>www.meiweix.cn</span>
+            <span>广东专业美食门户</span>
+        </span>
+                
+                    <span class="fr"><a href="javascript:;">注册</a></span>
+            <span class="fr"><a href="javascript:;">登录</a></span>
+                </div>
+</div>
+<div class="main">
+    <div class="main-nav">
+        <div class="fl">
+            <a href="index.html" class="nav-link">首页</a>
+            <span class="nav-pot">·</span>
+            <a href="latest.html" class="nav-link">找优惠</a>
+            <span class="nav-pot">·</span>
+            <a href="bawangcan.html" class="nav-link">霸王餐</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">金牌食客卡</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">论坛</a>
+            <span class="nav-pot">·</span>
+            <a href="business.html" class="nav-link">推荐品牌</a>
+        </div>
+        <div class="fr search">
+            <input id="searchtext" type="text" placeholder="搜索最新资讯">
+            <span id="searchbtn" class="fr"></span>
+            <script>
+                (function () {
+                    var searchtext = document.getElementById('searchtext');
+                    var searchbtn = document.getElementById('searchbtn');
+
+                    if (window.addEventListener) {
+                        searchtext.addEventListener('keydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        }, false);
+                        searchbtn.addEventListener('click', search, false);
+                    } else if (window.attachEvent) {
+                        searchtext.attachEvent('onkeydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        });
+                        searchbtn.attachEvent('onclick', search);
+                    } else {
+                        searchtext.onkeydown = function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        };
+                        searchbtn.onclick = search;
+                    }
+
+                    function search() {
+                        var text = searchtext.value.replace(/(^\s+)|(\s+$)/,'');
+                        if(!text){
+                            alert('请填写要搜索的关键字。');
+                            return false;
+                        }
+                        window.location.href = './latest.php?searchtext=' + text;
+                    }
+                })();
+            </script>
+        </div>
+    </div><div class="main-latest">
+    <div class="latest-header">
+        <span>最新动态</span>
+    </div>
+    <div class="latest-search">
+        <form action="">
+            <!--<select name="" id="" class="search-select fl">
+                <option value="">全部</option>
+            </select>-->
+            <span class="fl" style="width:1px;height:27px;background-color:#c8c8c8;margin-top:6px;margin-left:-1px;"></span>
+            <input type="text" placeholder="请输入关键字" id="searchtext" name="searchtext" class="search-input fl" value="">
+            <input type="submit" value="搜索" class="search-btn fl">
+            <input name="target" type="hidden" value="0">
+        </form>
+    </div>
+    <ul class="latest-collect">
+        <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181224/3030250_bbbdd6e3a4b23b5256a944H2.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东福朋喜来登酒店 聚味轩中餐厅年夜饭开始预订</p>
+                    <p class="collect-content">广东福朋喜来登酒店聚味轩中餐厅年夜饭菜单已推出，期待您与家人和朋友品鉴。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181220/3030250_caca33ed3987c31b0332PKkw.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">望亭！你等的那个TA终于来了~</p>
+                    <p class="collect-content">北太湖边，望亭这座千年小镇被遗忘了太久。当浒墅关、郭巷、青剑湖…纷纷迎来自己的商业中心，望亭，这次没有缺席！就在望亭中心，禹洲商业广场来了！</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181210/3030250_3d867cefb41b261647e4Bggl.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东太湖假日酒店 甜蜜圣诞季｜您的圣诞礼物派送中</p>
+                    <p class="collect-content">广东太湖假日酒店臻心臻意打造甜蜜圣诞狂欢夜，为您和所爱的人精心准备了饕餮美食及丰富奖品，只待您前来揭晓</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181210/3030250_426177d6eda4fdc5ce33xZR4.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东香格里拉大酒店 2018圣诞点灯”爱心慈善派对</p>
+                    <p class="collect-content">2018年12月7日晚，广东香格里拉大酒店宴会大堂，“圣诞点灯”派对暨香格里拉企业社会责任之人文关怀项目“听见世界的声音”圆满举办。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181210/3030250_ff0205e143e65b28b410SDLp.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东独墅湖世尊酒店 大雪送温暖，真情暖人心</p>
+                    <p class="collect-content">广东独墅湖世尊酒店为了表达对交通警察，外卖小哥和环卫工人们的敬意和关爱，特别准备了丰富的食品和暖心的姜茶，走到他们身边，用实际行动感谢这些幕后“英雄们”为大家所做的一切。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181205/3030250_cd4a9b70061cb8a034cdG50J.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东汇融广场假日酒店 让漫威英雄在这里汇聚</p>
+                    <p class="collect-content">在圣诞节这个充满童趣的节日里，广东汇融广场假日酒店绣西餐厅策划了一场精彩纷呈的圣诞嘉年华。还请来全银河系，不！是全宇宙最帅最帅の卡司阵容</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181205/3030250_f7d0d57114aab2e9e275ZebB.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东日航酒店 午市铁板套餐</p>
+                    <p class="collect-content">在日航酒店5楼弁慶日餐厅，午市铁板套餐不仅吃得好，还能吃得饱！那些年数着手指头吃的日料，现在一次性吃回来~</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181204/3030250_22710ceba7af2f27639f0D85.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东凯悦酒店 “悦·星球”主题圣诞亮灯仪式</p>
+                    <p class="collect-content">2018年12月1日下午，广东凯悦酒店迎来开业后第五个圣诞亮灯仪式。在29层中庭下，缤纷的圣诞树、梦幻的节日装饰、唱诗班的悠扬歌声，都传递着节日的欢乐气氛。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_181203/3030250_51a31d098e99989bda53V6Vv.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">金鸡湖凯宾斯基大酒店 欧洲传统圣诞市集</p>
+                    <p class="collect-content">璀璨亮丽的圣诞树、精彩绝伦的圣诞儿童表演、琳琅满目的商家礼品……广东金鸡湖凯宾斯基大酒店一年一度享誉盛名的“圣诞集市”于2018年12月2日隆重开市，1000多位来自世界各地的嘉宾们亲身体验了原汁原味的欧洲圣诞集市。</p>
+                </a>
+            </li>    </ul>
+    
+    	<div class="latest-addmore">            
+		<div class="tcdPageCode"><a href="latest-0_6.html" class="prevPage">上一页</a>
+		<a href='latest-0_4.html' class='tcdNumber'>4</a><a href='latest-0_5.html' class='tcdNumber'>5</a><a href='latest-0_6.html' class='tcdNumber'>6</a><span class='current'>7</span><a href='javascript:;' class='tcdNumber'>8</a><a href='javascript:;' class='tcdNumber'>9</a><a href='javascript:;' class='tcdNumber'>10</a>		<a href="javascript:;" class="nextPage">下一页</a></div>        
+	</div>
+	        
+</div>
+</div>
+    <div class="footer01">
+        <a href="javascript:;" target="_blank">公司简介</a><span>|</span>
+        <a href="javascript:;" target="_blank">合作伙伴</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚聘英才</a><span>|</span>
+        <a href="javascript:;" target="_blank">法律声明</a><span>|</span>
+        <a href="javascript:;" target="_blank">联系我们</a><span>|</span>
+        <a href="javascript:;" target="_blank">帮助中心</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚信保障措施</a><span>|</span>
+        <a href="javascript:;" target="_blank">友情链接</a>
+        <img src="images/footer01_qrcode.jpg" alt="" class="fr footer01-qrcode">
+    </div>
+
+<script src="ymsextweb/stats/stats.js" type="text/javascript"></script></body>
+</html>

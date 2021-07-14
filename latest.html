@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="copyright" content="Copyright 2004-2017 www.meiweix.cn 广东美食网 - 广东美食网户网站">
+    <meta name="keywords" content="广东,姑苏美食,广东美食网,广东餐饮,金牌食客卡,电子优惠券,外卖,商家黄页,大众点评,博客,休闲娱乐,姑苏生活论坛,特色土特产,生活时尚,http://www.meiweix.cn">
+    <meta name="description" content="广东美食网、广东美食网是广东的美食门户网站，拥有最新鲜、最丰富的美食资讯。其中金牌食客卡是联合广东众多优秀商家推出的一种优惠卡，优惠打折涉及餐饮、休闲、购物等广东时尚生活的各个方面；电子优惠券是为网友提供的另一种优惠措施，涉及生活的诸多方面；同时拥有外卖、商家点评、博客等王牌栏目。网站下属的姑苏生活论坛，无论是美食、购物、交友、家庭，还是车友会、理财、旅游，它都已成为广东人生活中不可或缺的一部分。">
+    <title>最新动态 - 广东美食网 广东美食网 - 广东美食网户网站</title>
+    <link rel="stylesheet" href="style/style-2.0.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.page.js"></script>
+</head>
+<body>
+
+<div class="header">
+    <div class="header-center">
+                <a href="index.html" class="center-logo fl"><img src="images/logo1.png" alt="广东美食网"></a>
+        <span class="center-site fl">
+            <span>www.meiweix.cn</span>
+            <span>广东专业美食门户</span>
+        </span>
+                
+                    <span class="fr"><a href="javascript:;">注册</a></span>
+            <span class="fr"><a href="javascript:;">登录</a></span>
+                </div>
+</div>
+<div class="main">
+    <div class="main-nav">
+        <div class="fl">
+            <a href="index.html" class="nav-link">首页</a>
+            <span class="nav-pot">·</span>
+            <a href="" class="nav-link">找优惠</a>
+            <span class="nav-pot">·</span>
+            <a href="bawangcan.html" class="nav-link">霸王餐</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">金牌食客卡</a>
+            <span class="nav-pot">·</span>
+            <a href="javascript:;" target="_blank" class="nav-link">论坛</a>
+            <span class="nav-pot">·</span>
+            <a href="business.html" class="nav-link">推荐品牌</a>
+        </div>
+        <div class="fr search">
+            <input id="searchtext" type="text" placeholder="搜索最新资讯">
+            <span id="searchbtn" class="fr"></span>
+            <script>
+                (function () {
+                    var searchtext = document.getElementById('searchtext');
+                    var searchbtn = document.getElementById('searchbtn');
+
+                    if (window.addEventListener) {
+                        searchtext.addEventListener('keydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        }, false);
+                        searchbtn.addEventListener('click', search, false);
+                    } else if (window.attachEvent) {
+                        searchtext.attachEvent('onkeydown', function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        });
+                        searchbtn.attachEvent('onclick', search);
+                    } else {
+                        searchtext.onkeydown = function (e) {
+                            e = e || window.event;
+                            if (e.keyCode !== 13) {
+                                return false;
+                            }
+                            search();
+                        };
+                        searchbtn.onclick = search;
+                    }
+
+                    function search() {
+                        var text = searchtext.value.replace(/(^\s+)|(\s+$)/,'');
+                        if(!text){
+                            alert('请填写要搜索的关键字。');
+                            return false;
+                        }
+                        window.location.href = './latest.php?searchtext=' + text;
+                    }
+                })();
+            </script>
+        </div>
+    </div><div class="main-latest">
+    <div class="latest-header">
+        <span>最新动态</span>
+    </div>
+    <div class="latest-search">
+        <form action="">
+            <!--<select name="" id="" class="search-select fl">
+                <option value="">全部</option>
+            </select>-->
+            <span class="fl" style="width:1px;height:27px;background-color:#c8c8c8;margin-top:6px;margin-left:-1px;"></span>
+            <input type="text" placeholder="请输入关键字" id="searchtext" name="searchtext" class="search-input fl" value="">
+            <input type="submit" value="搜索" class="search-btn fl">
+            <input name="target" type="hidden" value="0">
+        </form>
+    </div>
+    <ul class="latest-collect">
+        <li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210323/4213593_8546f588c6552ce05e1eeEaZ.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">觅一处避世桃园 携一潋湖韵灵气</p>
+                    <p class="collect-content">2021年1月30日溧阳万豪酒店正式揭幕，作为江苏溧阳的第一家万豪品牌酒店，为休闲与商旅客人提供理想的旅居选择。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210321/4213593_d845716017b76badf8ebx9Jk.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东尼依格罗酒店将于2021年4月1日在中国「东方威尼斯」耀世启幕</p>
+                    <p class="collect-content">广东尼依格罗酒店位于广东国际金融中心之巅，坐拥风光如画的运河及金鸡湖景色。酒店将于4月启幕，届时将成为市内奢华酒店之列中最具声望的全新地标之一。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210308/4213593_27defce3b2337f27d29b6jJF.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东园区香格里拉大酒店 以花之名，赴茶之约</p>
+                    <p class="collect-content">2021年3月7日，广东园区香格里拉大酒店与各位来宾共度女神节。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210302/4213593_7a32ede72921b53e8770LEb7.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">福牛迎新 花灯贺岁</p>
+                    <p class="collect-content">2月26日下午，位于广东市高新区华山路8号的鑫苑国际城市花园小区内，鑫苑物业为小区业主举办了一场“福牛迎新 花灯贺岁”的元宵节社区文化活动</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210209/4213593_10d9c5cb4db5848b44a0Zeee.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">《寻味》海内外热播 烟火气息抚慰人心</p>
+                    <p class="collect-content">为增进中国与西亚北非国家的交流互鉴和民心相通，推动疫情后中国与亚非国家的文化和旅游交流，中国文化和旅游部出品、中央广播电视总台亚非中心联合制作了2021“欢聚新春·团圆中国”特别节目《寻味》。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210201/4213593_689e2061f3e50b3932e6oq54.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">2021中国好声音全国海选广东赛区启动仪式</p>
+                    <p class="collect-content">2021年1月30日下午，云广实创（广东）文化发展有限公司承办的的2021中国好声音全国海选广东赛区启动仪式暨新闻发布会在冠名方虎丘婚纱城五楼楼顶盛大起航。</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210128/4213593_5e964583cfb45238006fYeeI.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">英迪格品牌酒店今夏进驻广东</p>
+                    <p class="collect-content">2021年1月26日 中国 江苏 广东 近日，洲际酒店集团宣布广东古运河英迪格酒店将于2021年夏季揭幕，这也是广东首家英迪格品牌的酒店</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_210125/4213593_f2d47110ab7185c3dd6fKpwn.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">广东山姆邀你“宅家过年”</p>
+                    <p class="collect-content">为满足会员“宅家过节”，山姆通过提早排期加大生产量、全国调配货源等方式，加大基础民生商品的供应，如肉类、蔬菜和鸡蛋品类供货量是去年同期的1.5倍</p>
+                </a>
+            </li><li>
+                <a href="javascript:;" target="_blank">
+                    <img src="webbsimgs/day_200601/1065767_d5a914f2d0abd8d08b6a6jb2.jpg" alt="" class="collect-img">
+                    <p class="collect-title one-line">不时不食！广东纽威丽筠这些夏日新菜品不能错过</p>
+                    <p class="collect-content">将广东传统时令菜融入其中，以广东本地原材料为主，带来清爽的夏日口感。</p>
+                </a>
+            </li>    </ul>
+    
+    	<div class="latest-addmore">            
+		<div class="tcdPageCode"><a href="" class="prevPage">上一页</a>
+		<span class='current'>1</span><a href='latest-0_2.html' class='tcdNumber'>2</a><a href='latest-0_3.html' class='tcdNumber'>3</a><a href='latest-0_4.html' class='tcdNumber'>4</a><a href='latest-0_5.html' class='tcdNumber'>5</a><a href='latest-0_6.html' class='tcdNumber'>6</a><a href='latest-0_7.html' class='tcdNumber'>7</a>		<a href="latest-0_2.html" class="nextPage">下一页</a></div>        
+	</div>
+	        
+</div>
+</div>
+    <div class="footer01">
+        <a href="javascript:;" target="_blank">公司简介</a><span>|</span>
+        <a href="javascript:;" target="_blank">合作伙伴</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚聘英才</a><span>|</span>
+        <a href="javascript:;" target="_blank">法律声明</a><span>|</span>
+        <a href="javascript:;" target="_blank">联系我们</a><span>|</span>
+        <a href="javascript:;" target="_blank">帮助中心</a><span>|</span>
+        <a href="javascript:;" target="_blank">诚信保障措施</a><span>|</span>
+        <a href="javascript:;" target="_blank">友情链接</a>
+        <img src="images/footer01_qrcode.jpg" alt="" class="fr footer01-qrcode">
+    </div>
+
+<script src="ymsextweb/stats/stats.js" type="text/javascript"></script></body>
+</html>
